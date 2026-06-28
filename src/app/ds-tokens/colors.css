@@ -1,0 +1,106 @@
+/* =====================================================================
+   COLORS — S'investir Simulateurs (DARK)
+   Premium dark-navy fintech. Royal blue primary, gold secondary accent.
+   Base scales first, then semantic aliases.
+   ===================================================================== */
+
+:root {
+  /* ---- Navy / surfaces (the dark canvas) --------------------------- */
+  --navy-950: #070A12;   /* deepest backdrop */
+  --navy-900: #0A0E1A;   /* app background base */
+  --navy-850: #0D1322;   /* page panel */
+  --navy-800: #111728;   /* sidebar / base card */
+  --navy-700: #161D32;   /* elevated card */
+  --navy-600: #1C2540;   /* input / hover surface */
+  --navy-500: #26314F;   /* strong hover / divider-strong */
+  --navy-400: #313D5E;   /* subtle border on dark */
+
+  /* ---- Royal blue (primary action / data) -------------------------- */
+  --blue-50:  #EAF1FE;
+  --blue-100: #CFE0FD;
+  --blue-200: #9CC0FB;
+  --blue-300: #6BA0F7;
+  --blue-400: #4D8DF5;   /* bright accent / subtitle */
+  --blue-500: #2E6BEC;   /* primary blue */
+  --blue-600: #1F5AD8;   /* primary pressed */
+  --blue-700: #1A49B0;
+  --blue-800: #163A8E;
+  --blue-900: #122E6B;
+
+  /* ---- Gold (secondary accent: logo, "intérêts gagnés") ------------ */
+  --gold-300: #F6D784;
+  --gold-400: #F1C75A;
+  --gold-500: #E9B43C;   /* primary gold */
+  --gold-600: #D29A22;
+  --gold-700: #A9791A;
+
+  /* ---- Text neutrals (light-on-dark) ------------------------------- */
+  --white:    #FFFFFF;
+  --ink-50:   #F4F7FC;   /* strongest text (near-white) */
+  --ink-100:  #DCE3F0;   /* body strong */
+  --ink-200:  #C2CBDC;   /* body */
+  --ink-300:  #9AA4BB;   /* muted */
+  --ink-400:  #6E7997;   /* faint / placeholder */
+  --ink-500:  #4C566F;   /* disabled */
+
+  /* ---- Support / semantic hues ------------------------------------- */
+  --green-500: #2BB673;   /* positive / gains-up */
+  --green-400: #34D08A;
+  --red-500:   #E5484D;   /* loss / negative */
+  --red-400:   #F26A6E;
+  --amber-500: #F0A21B;   /* caution / fees */
+  --cyan-500:  #56A8F5;   /* light-blue data series (somme investie) */
+
+  /* =================================================================
+     SEMANTIC ALIASES — author UI against these, not the raw scales.
+     ================================================================= */
+
+  /* Surfaces */
+  --surface-page:     var(--navy-900);
+  --surface-panel:    var(--navy-850);
+  --surface-card:     var(--navy-800);
+  --surface-elevated: var(--navy-700);
+  --surface-input:    var(--navy-600);
+  --surface-hover:    var(--navy-500);
+  --surface-overlay:  rgba(5, 8, 16, 0.66);
+
+  /* Text */
+  --text-strong:   var(--ink-50);
+  --text-body:     var(--ink-200);
+  --text-muted:    var(--ink-300);
+  --text-faint:    var(--ink-400);
+  --text-on-brand: #FFFFFF;
+  --text-link:     var(--blue-400);
+
+  /* Brand / primary action */
+  --brand:         var(--blue-500);
+  --brand-strong:  var(--blue-600);
+  --brand-bright:  var(--blue-400);
+  --brand-soft:    rgba(46, 107, 236, 0.14);
+  --brand-ring:    rgba(46, 107, 236, 0.40);
+
+  /* Gold accent */
+  --accent-gold:      var(--gold-500);
+  --accent-gold-soft: rgba(233, 180, 60, 0.14);
+
+  /* Borders & lines (low-contrast on dark) */
+  --border:        rgba(255, 255, 255, 0.07);
+  --border-strong: rgba(255, 255, 255, 0.13);
+  --border-brand:  rgba(46, 107, 236, 0.55);
+
+  /* Data / semantic feedback */
+  --positive:      var(--green-500);
+  --positive-soft: rgba(43, 182, 115, 0.16);
+  --negative:      var(--red-500);
+  --negative-soft: rgba(229, 72, 77, 0.16);
+  --caution:       var(--amber-500);
+  --caution-soft:  rgba(240, 162, 27, 0.16);
+  --info:          var(--blue-400);
+  --info-soft:     rgba(77, 141, 245, 0.14);
+
+  /* Chart series (capital vs gains vs invested) */
+  --series-capital:  var(--blue-500);   /* capital final — royal blue */
+  --series-gains:    var(--gold-500);   /* intérêts gagnés — gold */
+  --series-invested: var(--cyan-500);   /* somme investie — light blue */
+  --series-negative: var(--red-500);
+}
